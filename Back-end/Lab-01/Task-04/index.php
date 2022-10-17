@@ -4,11 +4,10 @@
       href='index.php?roll=true'>Кинути кубік</a><br><br>
       
     </body>
-    <?php 
+    <?php
         function diceRoll() {
             $dice = mt_rand(1, 6);
-            echo "Виводимо кубік...\n
-            Випало число $dice";
+            echo "<div>Виводимо кубік...</div> <div>Випало число $dice</div>";
         }
         if(isset($_GET['roll'])) {
             diceRoll();
